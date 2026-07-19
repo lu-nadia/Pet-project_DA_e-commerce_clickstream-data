@@ -48,3 +48,4 @@ purchase (~742.8 thousand events) → Successful checkout and revenue generation
 Here is the preview of the final clickstream dashboard:
 
 ![Looker Studio Clickstream Dashboard Preview](assets/clickstream_report.png)
+link: https://datastudio.google.com/reporting/132e02f7-178e-4561-bff3-b22ca4e5fe54
