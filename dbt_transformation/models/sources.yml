@@ -1,0 +1,43 @@
+
+# version: 2
+
+# models:
+#   - name: my_first_dbt_model
+#     description: "A starter dbt model"
+#     columns:
+#       - name: id
+#         description: "The primary key for this table"
+#         data_tests:
+#           - unique
+#           - not_null
+
+#   - name: my_second_dbt_model
+#     description: "A starter dbt model"
+#     columns:
+#       - name: id
+#         description: "The primary key for this table"
+#         data_tests:
+#           - unique
+#           - not_null
+
+# version: 2
+
+# sources:
+#   - name: staging_ecommerce
+#     database: da-project-e-commerce
+#     schema: ecommerce_clickstream
+#     tables:
+#       - name: raw_clickstream
+
+version: 2
+
+sources:
+  - name: staging_ecommerce
+    database: da-project-e-commerce
+    schema: ecommerce_clickstream
+    tables:
+      - name: raw_clickstream
+        columns:
+          - name: category_id
+            tests:
+              - not_null
