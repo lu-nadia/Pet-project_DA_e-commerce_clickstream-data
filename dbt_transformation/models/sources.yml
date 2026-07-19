@@ -40,4 +40,4 @@ sources:
         columns:
           - name: category_id
             tests:
-              - not_null
+              - not_null  
